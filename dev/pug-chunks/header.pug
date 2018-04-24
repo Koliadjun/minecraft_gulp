@@ -1,0 +1,43 @@
+.header
+	.header__top
+		.wrapper
+			|Подключайся и играй на наших серверах!
+			.header__soclink
+				a.icon.icon-vk(href="#") vkontkte
+				a.icon.icon-vk(href="#") facebook
+				a.icon.icon-vk(href="#") uk lang
+	.wrapper
+		.row
+		.header__col.heder__col_logo1
+			a(href="#")
+				img(src="img/logo.png", alt="")
+		.header__col.heder__col_contacts
+			.contacts
+				.contacts_title
+					|Админ
+				.contacts_phones
+					a(href="tel:+380683332210") +38(068) 333-22-10
+					a(href="tel:+38099755050") +38(099) 750-50-50
+				.contacts_title
+					|По донату:
+				.contacts_phones
+					a(href="tel:+380673322180") +38(067)-332-21-80
+				|Скайп:
+				a(href="skype:minecraft-km7") minecraft-km7
+		.header__col.heder__col_btns
+		.header__menu
+			ul.wrapper
+				-
+					var headerMenu =[
+						'Главная',
+						'Об игре',
+						'Список серверов',
+						'Наша команда',
+						'Донат'
+					]
+				each item in headerMenu
+					li
+						a(href="#")=item
+		.header__col.heder__col_logo2
+				a(href="#")
+					img(src="img/logo-big.png", alt="")

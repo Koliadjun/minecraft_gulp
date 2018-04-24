@@ -1,5 +1,3 @@
-*
-!.gitignore
-!dev/
-!gulpfile.js
-!package.json
+app/
+package-lock.json
+node_modules/
