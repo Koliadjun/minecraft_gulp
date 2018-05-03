@@ -10,6 +10,8 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('imgCopy', function(){
 	gulp.src('./dev/img/*')
 	.pipe(gulp.dest('./app/img/'))
+  gulp.src('./dev/icons/*')
+  .pipe(gulp.dest('./app/icons/'))
 })
 
 gulp.task('sass', function () {
