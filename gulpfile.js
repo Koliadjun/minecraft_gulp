@@ -13,6 +13,10 @@ gulp.task('imgCopy', function(){
   gulp.src('./dev/icons/*')
   .pipe(gulp.dest('./app/icons/'))
 })
+gulp.task('jsCopy', function(){
+  gulp.src('./dev/js/*')
+  .pipe(gulp.dest('./app/js/'))
+})
 
 gulp.task('sass', function () {
   return gulp.src('./dev/scss/*.scss')
@@ -32,6 +36,7 @@ gulp.task('watch', function(){
 	gulp.watch('./dev/*.pug',['views'])
 	gulp.watch('./dev/pug-chunks/*.pug',['views'])
   gulp.watch('./dev/scss/*.scss',['sass'])
+  gulp.watch('./dev/js/*.js',['jsCopy'])
 })
  
 
@@ -40,7 +45,7 @@ gulp.task('webserver', function() {
     .pipe(server({
       livereload: true,
       directoryListing: false,
-      open: true
+      open: false
     }));
 });
 
