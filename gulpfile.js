@@ -57,4 +57,4 @@ gulp.task('views', function buildHTML() {
   .pipe(gulp.dest('./app/'))
 });
 
-gulp.task('default', ['watch','views','webserver', 'sass']);
+gulp.task('default', ['watch','views','webserver', 'sass', 'jsCopy','imgCopy']);

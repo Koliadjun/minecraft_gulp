@@ -1,40 +1,44 @@
 .header
 	.header__top.m-b-10
-		.wrapper
-			span|Подключайся и играй на наших серверах!
-			.header__soclink
-				a.icon.icon-icon-vk(href="#")
-				a.icon.icon-icon-fb(href="#")
-				a.icon.icon-icon-gb(href="#")
+		.wrapper.t-align-left
+			.row
+				.display-inl-block
+					span|Подключайся и играй на наших серверах!
+				.header__soclink.display-inl-block.pull-right-laptop
+					a.icon.icon-icon-vk(href="#")
+					a.icon.icon-icon-fb(href="#")
+					a.icon.icon-icon-gb(href="#")
 	.wrapper
-		.row
-		.header__col.heder__col_logo1
-			a(href="#")
-				img(src="img/logo.png", alt="")
-		.header__col.heder__col_contacts
-			.contacts
-				.contacts_title
-					|Админ
-				.contacts_phones.m-b-10
-					a(href="tel:+380683332210") +38(068) 333-22-10
-					br
-					a(href="tel:+38099755050") +38(099) 750-50-50
-				br
-				.contacts_title
-					|По донату:
-				.contacts_phones.m-b-10
-					a(href="tel:+380673322180") +38(067)-332-21-80
-				.skype.m-b-10
-					|Скайп:
-					a(href="skype:minecraft-km7") minecraft-km7
-		.header__col.heder__col_btns
-			a(href="#").btn.btn-block.m-b-10 Выбрать сервер
-			a(href="#").btn.btn-block.m-b-10 Случайный
-		.header__menu.m-b-10
-			ul.wrapper.row
+			.clearfix.row
+				.header__col.heder__col_logo1.m-b-10
+					a(href="#")
+						img(src="img/logo.png", alt="")
+				.header__col.heder__col_contacts
+					.contacts
+						.contacts_title
+							|Админ
+						.contacts_phones.m-b-10
+							a(href="tel:+380683332210") +38(068) 333-22-10
+							br
+							a(href="tel:+38099755050") +38(099) 750-50-50
+						br
+						.contacts_title
+							|По донату:
+						.contacts_phones.m-b-10
+							a(href="tel:+380673322180") +38(067)-332-21-80
+						.skype.m-b-10
+							|Скайп:
+							a(href="skype:minecraft-km7") minecraft-km7
+				.header__col.heder__col_btns.m-b-10
+					a(href="#").btn.btn-block.m-b-10 Выбрать сервер
+					a(href="#").btn.btn-block.m-b-10 Случайный
+				.header__col.heder__col_logo2.m-b-10
+						a(href="#")
+							img(src="img/logo-big.png", alt="")
+	.header__menu.m-b-10
+		ul.wrapper
+			.row
 				each item in headerMenu
 					li
-						a(href="#")=item
-		.header__col.heder__col_logo2.m-b-10
-				a(href="#")
-					img(src="img/logo-big.png", alt="")
+								a(href="#")=item
+				

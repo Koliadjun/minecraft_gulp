@@ -10,3 +10,80 @@
 .row{
 	margin: 0 $ofset*-1;
 }
+.display-inl-block{
+  display: inline-block;
+  vertical-align: middle;
+}
+.heder__col_logo1{
+  @include breakpoint(sm)
+  {
+    float: left;
+    width: 40%;
+  }
+  @include breakpoint(md)
+  {
+    float: left;
+    width: 18%; 
+  }
+}
+.heder__col_contacts{
+  @include breakpoint(sm)
+  {
+    float: left;
+    width: 60%;
+  }
+  @include breakpoint(md)
+  {
+    float: left;
+    width: 30%;
+  }
+}
+.heder__col_btns{
+    @include breakpoint(sm)
+  {
+    float: left;
+    width: 32%;
+  }
+  @include breakpoint(md)
+  {
+    float: left;
+    width: 18%;
+  }
+}
+.heder__col_logo2{
+    @include breakpoint(sm)
+  {
+    float: left;
+    width: 68%;
+  }
+  @include breakpoint(md)
+  {
+    float: left;
+    width: 34%;
+  }
+}
+[class*="col"]{
+  padding: 0 10px;
+  vertical-align: middle; 
+}
+@include breakpoint(md)
+{
+.t-align-left{
+  text-align: left;
+}
+.pull-right-laptop{
+  float: right;
+}
+.col-laptop-1-4{
+  float: left;
+  width: 25%;
+}
+.col-laptop-3-4{
+  float: left;
+  width: 75%;
+}
+.col-laptop-1-3{
+  float: left;
+  width: 33.33%;
+}
+}
